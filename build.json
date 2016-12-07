@@ -1,13 +1,14 @@
 {
-    "baseUrl": "../",
-    "name": "js/main",
-    "include": [
-        "lib/require"
-    ],
+    "baseUrl": "./",
+    "include": ["lib/almond", "js/main"],
+	 "paths": {
+		"main": "js/main"
+	 },
     "exclude": [],
-    "optimize": "uglify2",
+	 "optimize": "none",
     "out": "_build/main-built.js",
-    "insertRequire": [
-        "js/main"
-    ]
+	 "wrap": {
+		"startFile": "wrap/wrap.start.js",
+		"endFile": "wrap/wrap.end.js"
+	 }
 }

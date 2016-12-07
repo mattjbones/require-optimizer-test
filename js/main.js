@@ -12,10 +12,14 @@ define(function (require) {
 	 var data = require("js/data");
     var alerter = require("js/alerter");
 
+	 return [data, alerter];
+
     //call a function on each module    
 	 alerter.writeLog("Starting app");
     data.get("getmovies", { id: 25 });
 
     //display logs    
 	 alert(alerter.logs.join('\n'));
+
+	 
 });
