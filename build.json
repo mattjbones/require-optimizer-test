@@ -1,0 +1,13 @@
+{
+    "baseUrl": "../",
+    "name": "js/main",
+    "include": [
+        "lib/require"
+    ],
+    "exclude": [],
+    "optimize": "uglify2",
+    "out": "_build/main-built.js",
+    "insertRequire": [
+        "js/main"
+    ]
+}
